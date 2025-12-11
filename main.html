@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum|Energy: Hybrid Optimization</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark charcoal/GitHub dark theme background */
+            color: #e5e7eb; /* Light gray text */
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #6366f1, #34d399); /* Indigo to Green */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header & Navigation -->
+    <header class="p-4 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold text-indigo-400">
+                Quantum|Energy
+            </div>
+            <nav class="space-x-4 text-sm hidden sm:block">
+                <a href="#solution" class="hover:text-indigo-400 transition">Our Method</a>
+                <a href="#impact" class="hover:text-indigo-400 transition">Impact & Scale</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Connect</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="py-20 md:py-32 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                <span class="text-gradient">Hybrid Quantum Optimization</span> for Energy Efficiency
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-10">
+                Solving NP problems in smart grid management to eliminate wasted power and accelerate the clean energy transition.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#solution" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg transition shadow-lg shadow-indigo-500/50">
+                    See The Architecture
+                </a>
+                <!-- GitHub Repo Link -->
+                <a href="https://github.com/ChryssPoetry/QuantumEnergy" target="_blank" class="bg-gray-700 hover:bg-gray-600 text-gray-200 font-semibold py-3 px-8 rounded-lg transition border border-gray-600">
+                    View Prototype Code (GitHub)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. The Problem: The Complexity Wall -->
+    <section class="py-16 md:py-24 bg-gray-900" id="problem">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">The Wall: Why Classical Systems Fail</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1: Complexity -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border border-gray-700">
+                    <svg class="w-10 h-10 text-red-500 mb-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Combinatorial Explosion</h3>
+                    <p class="text-gray-400">Optimizing real-time power flow and capacitor placement is a combinatorial challenge that overwhelms even supercomputers.</p>
+                </div>
+                <!-- Card 2: Intermittency -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border border-gray-700">
+                    <svg class="w-10 h-10 text-yellow-500 mb-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m18 10-6 6-6-6"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Renewable Volatility</h3>
+                    <p class="text-gray-400">The rise of solar and wind introduces stochasticity, making accurate demand and supply forecasting exponentially harder to optimize.</p>
+                </div>
+                <!-- Card 3: Energy Waste -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border border-gray-700">
+                    <svg class="w-10 h-10 text-green-500 mb-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/><path d="M16 8v3"/><path d="M18 11v3"/><path d="M20 14v3"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Loss of Billions</h3>
+                    <p class="text-gray-400">Globally, a significant percentage of generated power is lost in transmission and distribution due to suboptimal classical routing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. The Solution: The Hybrid Quantum Loop (VQE/QAOA) -->
+    <section class="py-16 md:py-24" id="solution">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">The Hybrid Quantum-Classical Architecture</h2>
+
+            <div class="flex flex-col items-center space-y-12">
+
+                <!-- Step 1: Classical Input & Cost Function Definition -->
+                <div class="flex flex-col md:flex-row items-center bg-gray-800 p-8 rounded-2xl shadow-xl border-t-4 border-l-4 border-indigo-500/70">
+                    <div class="w-full md:w-1/3 text-center md:text-left md:pr-8 mb-6 md:mb-0">
+                        <span class="text-4xl font-extrabold text-indigo-400 block mb-2">1. Classical Feeding</span>
+                        <p class="text-gray-400">The classical computer initializes parameters and receives the quantum result.</p>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h4 class="text-2xl font-semibold mb-3">Define the Cost Function (H)</h4>
+                        <p class="text-gray-300">The problem constraints (load, voltage, capacity) are mapped into a Hamiltonian, defining the fitness score for energy loss minimization.</p>
+                    </div>
+                </div>
+
+                <!-- Arrow Down -->
+                <div class="text-indigo-400">
+                    <svg class="w-10 h-10 animate-bounce" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+                </div>
+
+                <!-- Step 2: Quantum Processing (Ansatz) -->
+                <div class="flex flex-col md:flex-row items-center bg-gray-800 p-8 rounded-2xl shadow-xl border-t-4 border-l-4 border-green-500/70">
+                    <div class="w-full md:w-1/3 text-center md:text-left md:pr-8 mb-6 md:mb-0">
+                        <span class="text-4xl font-extrabold text-green-400 block mb-2">2. Quantum Ansatz</span>
+                        <p class="text-gray-400">The VQE/QAOA circuit state performs the massive parallel search.</p>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h4 class="text-2xl font-semibold mb-3">Quantum State Exploration</h4>
+                        <p class="text-gray-300">The parameterized quantum circuit (Ansatz) is executed on the QPU, rapidly exploring the solution space for the lowest energy state (minimum cost).</p>
+                    </div>
+                </div>
+
+                <!-- Arrow Down -->
+                <div class="text-green-400">
+                    <svg class="w-10 h-10 animate-bounce" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+                </div>
+
+                <!-- Step 3: Measurement & Loop -->
+                <div class="flex flex-col md:flex-row items-center bg-gray-800 p-8 rounded-2xl shadow-xl border-t-4 border-l-4 border-yellow-500/70">
+                    <div class="w-full md:w-1/3 text-center md:text-left md:pr-8 mb-6 md:mb-0">
+                        <span class="text-4xl font-extrabold text-yellow-400 block mb-2">3. Iterative Feedback</span>
+                        <p class="text-gray-400">The loop repeats, quickly converging on the near-optimal distribution state.</p>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h4 class="text-2xl font-semibold mb-3">Classical Parameter Tuning</h4>
+                        <p class="text-gray-300">The measured quantum result is fed back to the classical optimizer (Classical Feeding), which updates the parameters for the next Ansatz iteration, driving convergence.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Impact & Scale -->
+    <section class="py-16 md:py-24 bg-gray-900" id="impact">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Measurable Impact: ROI and Sustainability</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- ROI Card (SpinLab Focus) -->
+                <div class="bg-gray-800 p-8 rounded-xl border-b-4 border-indigo-600 shadow-xl">
+                    <h3 class="text-2xl font-bold text-indigo-400 mb-4">Financial ROI (SpinLab HHL Target)</h3>
+                    <ul class="space-y-4 text-lg text-gray-300 list-disc pl-5">
+                        <!-- UPDATED: Removed \mathbf and $ -->
+                        <li>Reduced Operational Costs: Up to 2% to 5% reduction in energy loss immediately converts to profit for utility partners.</li>
+                        <li>Optimized Asset Utilization: Better forecasting extends asset lifespan and reduces maintenance cycles.</li>
+                        <li>Market Readiness: Designed as a SaaS API, ensuring easy integration and quick time-to-market across European utilities.</li>
+                    </ul>
+                </div>
+                <!-- Sustainability Card (Impact Hub Target) -->
+                <div class="bg-gray-800 p-8 rounded-xl border-b-4 border-green-600 shadow-xl">
+                    <h3 class="text-2xl font-bold text-green-400 mb-4">Sustainable Impact (Social Impact Lab Target)</h3>
+                    <ul class="space-y-4 text-lg text-gray-300 list-disc pl-5">
+                        <!-- UPDATED: Removed \mathbf, $, and \text{CO}_2 -->
+                        <li>Decarbonization by Efficiency: Every 1% loss reduction prevents thousands of tons of CO2 emissions annually.</li>
+                        <li>Renewable Grid Stability: Optimization allows grids to handle higher penetrations of intermittent green energy sources.</li>
+                        <li>Public Good: Stabilized power supply and reduced transmission costs benefit the public consumer and promote energy equity.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Call to Action / Contact -->
+    <section class="py-16 md:py-24 text-center bg-gray-900 border-t border-gray-800" id="contact">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-4">Ready for the Quantum Leap?</h2>
+            <p class="text-xl text-gray-400 mb-8">We are seeking strategic partners (investors, mentors, pilot customers) to deploy the prototype in Central Germany.</p>
+            
+            <!-- Contact Info Block -->
+            <div class="mb-8 text-lg space-y-2">
+                <p class="text-gray-300">Email: <a href="mailto:franklynchrys@gmail.com" class="text-indigo-400 hover:underline">franklynchrys@gmail.com</a></p>
+                <p class="text-gray-300">Phone (DE): <a href="tel:+4915140132364" class="text-indigo-400 hover:underline">+49 151 4013 2364</a></p>
+            </div>
+            
+            <!-- Two-button contact interface -->
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <!-- Primary CTA: LinkedIn (High-Value Connection) -->
+                <a href="https://www.linkedin.com/in/franklin-nwafor-857025141/" target="_blank" class="bg-teal-500 hover:bg-teal-600 text-gray-900 font-extrabold text-lg py-3 px-10 rounded-lg transition transform hover:scale-105 shadow-xl shadow-teal-500/50">
+                    Connect on LinkedIn (Franklin Nwafor)
+                </a>
+                <!-- Secondary CTA: Email -->
+                <a href="mailto:franklynchrys@gmail.com?subject=Quantum%20Energy%20Pitch%20-%20Accelerator%20Inquiry" class="bg-gray-700 hover:bg-gray-600 text-gray-200 font-semibold py-3 px-10 rounded-lg transition border border-gray-600">
+                    Send an Email
+                </a>
+            </div>
+
+            <p class="mt-8 text-sm text-gray-500">
+                &copy; 2025 Quantum|Energy Initiative | Prototype & Documentation available upon request.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
